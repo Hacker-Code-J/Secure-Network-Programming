@@ -70,6 +70,9 @@
     "**/Thumbs.db": true
   },
   "files.associations": {
-    "config.h": "c"
+    "config.h": "c",
+    "stdio.h": "c",
+    "socket.h": "c",
+    "string.h": "c"
   }
 }
