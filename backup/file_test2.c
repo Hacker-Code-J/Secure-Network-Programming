@@ -1,10 +1,5 @@
 #include "config.h"
-
-void ErrorHandling(char* msg) {
-    fputs(msg, stderr);
-    fputc('\n', stderr);
-    exit(1);
-}
+#include "file_common.h"
 
 int main(int argc, char* argv[]) {
     int fd1 = -1;

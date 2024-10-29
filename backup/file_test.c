@@ -1,10 +1,5 @@
 #include "config.h"
-
-// void ErrorHandling(char* msg) {
-//     fputs(msg, stderr);
-//     fputc('\n', stderr);
-//     exit(1);
-// }
+#include "file_common.h"
 
 int main(void) {
     int fd1, fd2, fd3;

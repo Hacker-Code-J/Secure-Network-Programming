@@ -14,14 +14,7 @@ int main(int argc, char* argv[]) {
     struct sockaddr_in clnt_addr;
     socklen_t clnt_addr_size;
 
-    // char message[] = "Hello World!";
-
-    char message[][64] = {
-        "Hello World!",
-        "Nice to Meet you!",
-        "What's your name?",
-        "See you again~"
-    };
+    char msg[] = "Hello World!";
 
     if (argc != 2) {
         printf("Usage: %s <port>\n", argv[0]);
@@ -43,7 +36,6 @@ int main(int argc, char* argv[]) {
 
     if (listen(serv_sock, 5) == -1) error_handling("listen() error");
 
-
     clnt_addr_size = sizeof(clnt_addr); 
     clnt_sock = accept(serv_sock, 
                        (struct sockaddr*)&clnt_addr,
@@ -51,14 +43,11 @@ int main(int argc, char* argv[]) {
     
     if (clnt_sock == -1) error_handling("accept() error");
 
-    // write(clnt_sock, message, sizeof(message));
-    // close(clnt_sock);
-    // close(serv_sock);
-
-    for (u32 i = 0; i < sizeof(message) / sizeof(message[0]); i++) {
-        write(clnt_sock, message[i], sizeof(message[i]));
-        printf("Sending message: %s\n", message[i]);
-    }
+    for (long unsigned int i = 0; i < sizeof(msg); i++)
+        write(clnt_sock, &msg[i], 1);
+    
+    close(clnt_sock);
+    close(serv_sock);
 
     return 0;
 }
