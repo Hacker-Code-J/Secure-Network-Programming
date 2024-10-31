@@ -73,6 +73,8 @@
     "config.h": "c",
     "stdio.h": "c",
     "socket.h": "c",
-    "string.h": "c"
+    "string.h": "c",
+    "inet.h": "c",
+    "fcntl.h": "c"
   }
 }
