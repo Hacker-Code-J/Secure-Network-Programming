@@ -75,6 +75,8 @@
     "socket.h": "c",
     "string.h": "c",
     "inet.h": "c",
-    "fcntl.h": "c"
+    "fcntl.h": "c",
+    "unistd.h": "c",
+    "readnwrite.h": "c"
   }
 }
