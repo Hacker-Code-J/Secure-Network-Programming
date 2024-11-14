@@ -77,6 +77,7 @@
     "inet.h": "c",
     "fcntl.h": "c",
     "unistd.h": "c",
-    "readnwrite.h": "c"
+    "readnwrite.h": "c",
+    "stdlib.h": "c"
   }
 }
