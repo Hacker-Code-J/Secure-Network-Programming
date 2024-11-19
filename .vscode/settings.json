@@ -78,6 +78,7 @@
     "fcntl.h": "c",
     "unistd.h": "c",
     "readnwrite.h": "c",
-    "stdlib.h": "c"
+    "stdlib.h": "c",
+    "pthread.h": "c"
   }
 }
