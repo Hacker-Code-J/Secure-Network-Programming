@@ -12,7 +12,7 @@ void* thread_summation(void* arg) {
     int end = ((int*)arg)[1];
 
     while (start <= end) {
-        sum += start;
+        sum += start;   // sum is shared by worker threads
         start++;
     }
     

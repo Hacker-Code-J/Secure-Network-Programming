@@ -79,6 +79,7 @@
     "unistd.h": "c",
     "readnwrite.h": "c",
     "stdlib.h": "c",
-    "pthread.h": "c"
+    "pthread.h": "c",
+    "semaphore.h": "c"
   }
 }
