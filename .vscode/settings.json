@@ -80,6 +80,7 @@
     "readnwrite.h": "c",
     "stdlib.h": "c",
     "pthread.h": "c",
-    "semaphore.h": "c"
+    "semaphore.h": "c",
+    "aes.h": "c"
   }
 }
